@@ -4,19 +4,15 @@ const BenefitSection = () => {
     return (
         <div className="bg-[#1A1A1A]">
             <div className="w-11/12 sm:w-10/12 lg:w-8/12 mx-auto py-10">
-                {/* Title & Description */}
                 <div>
                     <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-stone-100 text-center md:text-left leading-tight">
                         <strong>Earn money with Sisu-Taxi</strong>
                     </h1>
                     <p className="text-base sm:text-lg md:text-2xl mt-4 sm:mt-6 md:mt-10 text-stone-300 text-center md:text-left leading-relaxed">
-                        Join over 4.5 million partners worldwide that earn with Bolt. For
-                        drivers, couriers, merchants, and fleet owners looking for new ways
-                        to boost revenue.
+                        Join over 4.5 million partners worldwide who grow their income with Sisu Taxi — trusted by drivers, couriers, merchants, and fleet owners to unlock new revenue opportunities.
                     </p>
                 </div>
 
-                {/* Section 1 */}
                 <div className="flex flex-col md:flex-row gap-6 sm:gap-10 md:gap-12 items-center my-12 md:my-24 text-stone-100">
                     <img
                         className="rounded-2xl w-full md:w-1/2 object-cover"
@@ -25,14 +21,13 @@ const BenefitSection = () => {
                     />
                     <div className="text-center md:text-left md:w-1/2">
                         <span className="block text-sm sm:text-base text-amber-300">
-                          Earn money as a Bolt driver
+                          Drive with Sisu Taxi and turn your time into income.
                         </span>
                         <h2 className="text-xl sm:text-2xl md:text-4xl mt-2 font-bold">
-                            Drive and earn money
+                            Turn every ride into income with Sisu Taxi.
                         </h2>
                         <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed">
-                            Our 200+ million riders will send you plenty of ride requests.
-                            When demand is high, you can earn even more.
+                            Over 200 million riders worldwide are looking for rides. The busier it gets, the more you earn.
                         </p>
                         <div className="my-5 sm:my-6">
                             <Link
@@ -45,18 +40,16 @@ const BenefitSection = () => {
                     </div>
                 </div>
 
-                {/* Section 2 */}
                 <div className="flex flex-col-reverse md:flex-row gap-6 sm:gap-10 md:gap-12 items-center my-12 md:my-24 text-stone-100">
                     <div className="text-center md:text-left md:w-1/2">
                         <span className="block text-sm sm:text-base text-amber-300">
-                          Become a Bolt courier partner
+                          Join thousands of couriers worldwide who partner with Sisu Taxi.
                         </span>
                         <h2 className="text-xl sm:text-2xl md:text-4xl mt-2 font-bold">
                             Earn with every delivery
                         </h2>
                         <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed">
-                            You decide when and how often you deliver — weekdays, evenings,
-                            weekends, or just the occasional hour — it’s up to you.
+                            Deliver on your own schedule — weekdays, nights, weekends, or just the occasional hour. The choice is yours.
                         </p>
                         <div className="my-5 sm:my-6">
                             <Link
@@ -74,7 +67,6 @@ const BenefitSection = () => {
                     />
                 </div>
 
-                {/* Section 3 */}
                 <div className="flex flex-col md:flex-row gap-6 sm:gap-10 md:gap-12 items-center my-12 md:my-24 text-stone-100">
                     <img
                         className="rounded-2xl w-full md:w-1/2 object-cover"
@@ -86,11 +78,10 @@ const BenefitSection = () => {
                           Increase earnings as merchant
                         </span>
                         <h2 className="text-xl sm:text-2xl md:text-4xl mt-2 font-bold">
-                            Increase your sales and reach new customers
+                            Expand your reach and increase sales by connecting with new customers.
                         </h2>
                         <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed">
-                            Millions of our users are ordering food or goods from restaurants
-                            and stores just like yours.
+                            Millions of people rely on our platform to order food and goods from restaurants and stores like yours.
                         </p>
                         <div className="my-5 sm:my-6">
                             <Link
