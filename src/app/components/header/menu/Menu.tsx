@@ -68,7 +68,7 @@ const Menu = () => {
                         <a
                             key={item}
                             href="#"
-                            className="hover:text-gray-700 text-white py-2"
+                            className="hover:text-gray-700 text-[#111428] py-2"
                             onClick={() => setMenuOpen(false)}
                         >
                             {item}
