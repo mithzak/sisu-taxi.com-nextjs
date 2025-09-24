@@ -13,7 +13,7 @@ const FeatureSection = () => {
     return (
         <div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center text-white my-10">
-                Our Awesome <span className="text-[#FDB813]">Features</span>
+                Designed for <span className="text-[#FDB813]">You</span>
             </h2>
 
             <div className="w-11/12 sm:w-10/12 lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mx-auto my-6">

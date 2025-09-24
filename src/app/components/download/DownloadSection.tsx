@@ -12,10 +12,10 @@ const DownloadSection = () => {
                 {/* متن و دکمه‌ها */}
                 <div className="w-full max-w-xl text-center lg:text-left">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl text-black font-bold mb-4">
-                        Your Ride, Anytime, Anywhere
+                        Your Ride. Your Way. Anytime, Anywhere.
                     </h2>
                     <p className="text-base sm:text-lg mb-6 text-black">
-                        Download our taxi app now and enjoy fast, safe, and affordable rides at your fingertips.
+                        Download our taxi app today and enjoy fast and affordable rides whenever you need them.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a

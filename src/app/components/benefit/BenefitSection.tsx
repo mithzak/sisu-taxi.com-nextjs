@@ -3,16 +3,7 @@ import Link from "next/link";
 const BenefitSection = () => {
     return (
         <div className="bg-[#1A1A1A]">
-            <div className="w-11/12 sm:w-10/12 lg:w-8/12 mx-auto py-10">
-                <div>
-                    <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-stone-100 text-center md:text-left leading-tight">
-                        <strong>Earn money with Sisu-Taxi</strong>
-                    </h1>
-                    <p className="text-base sm:text-lg md:text-2xl mt-4 sm:mt-6 md:mt-10 text-stone-300 text-center md:text-left leading-relaxed">
-                        Join over 4.5 million partners worldwide who grow their income with Sisu Taxi — trusted by drivers, couriers, merchants, and fleet owners to unlock new revenue opportunities.
-                    </p>
-                </div>
-
+            <div className="w-11/12 sm:w-10/12 lg:w-8/12 mx-auto py-1">
                 <div className="flex flex-col md:flex-row gap-6 sm:gap-10 md:gap-12 items-center my-12 md:my-24 text-stone-100">
                     <img
                         className="rounded-2xl w-full md:w-1/2 object-cover"
@@ -34,7 +25,7 @@ const BenefitSection = () => {
                                 href=""
                                 className="inline-block bg-[#FDB813] hover:bg-amber-200 text-[#2A2A2A] px-5 sm:px-8 md:px-10 py-2 sm:py-3 md:py-4 text-sm sm:text-lg md:text-xl rounded-xl font-bold transition"
                             >
-                                Register To Driver
+                                Add To Driver
                             </Link>
                         </div>
                     </div>

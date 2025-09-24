@@ -16,7 +16,7 @@ export default function Page() {
             <HeroSection />
             <FeatureSection />
             <BannerSection />
-            <BenefitSection />
+            {/*<BenefitSection />*/}
             <ServiceSection />
             <DownloadSection />
 
