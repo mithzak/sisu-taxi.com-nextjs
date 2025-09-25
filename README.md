@@ -1,6 +1,6 @@
-# Sisu Taxi
+# Sisu-Taxi
 
-**Sisu Taxi** is an online taxi booking platform built with **Next.js** and **TailwindCSS**. It provides a seamless user experience for booking rides, tracking trips, and managing profiles.
+**Sisu-Taxi** is an online taxi booking platform built with **Next.js** and **TailwindCSS**. It provides a seamless user experience for booking rides, tracking trips, and managing profiles.
 
 Website: [sisu-taxi.com](https://sisu-taxi.com)
 

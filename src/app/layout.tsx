@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sisu Taxi",
-  description: "Boost your sales and reach new customers with Sisu Taxi. Join millions of riders and partners worldwide and maximize your earnings.",
+  title: "Sisu-Taxi",
+  description: "Boost your sales and reach new customers with Sisu-Taxi. Join millions of riders and partners worldwide and maximize your earnings.",
 };
 
 export default function RootLayout({

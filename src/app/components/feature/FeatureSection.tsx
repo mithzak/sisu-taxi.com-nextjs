@@ -1,3 +1,5 @@
+"use client"
+
 import { FaEuroSign } from "react-icons/fa";
 import { RiMastercardFill, RiVisaLine } from "react-icons/ri";
 import { FaApplePay } from "react-icons/fa6";
@@ -8,74 +10,85 @@ import { MdHighQuality } from "react-icons/md";
 import { LuTabletSmartphone } from "react-icons/lu";
 import { ImAppleinc } from "react-icons/im";
 import { GrAndroid } from "react-icons/gr";
+import { motion } from "framer-motion";
 
 const FeatureSection = () => {
     return (
-        <div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center text-white my-10">
-                Designed for <span className="text-[#FDB813]">You</span>
+        <div className="relative bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] py-20 overflow-hidden">
+            {/* Title */}
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-16 text-center">
+                Designed for{" "}
+                <span className="bg-gradient-to-r from-yellow-400 via-[#FDB813] to-yellow-600 bg-clip-text text-transparent">
+                    You
+                </span>
             </h2>
 
-            <div className="w-11/12 sm:w-10/12 lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mx-auto my-6">
-
-                <div className="bg-[#2A2A2A] rounded-2xl flex flex-col items-center text-center py-8 sm:py-10">
-                    <FaEuroSign
-                        size={64}
-                        className="bg-[#FDB813] p-4 text-[#2A2A2A] rounded-lg mb-4"
-                    />
-                    <span className="text-white text-xl sm:text-2xl font-semibold">
-                        Support <br /> All Payment
-                    </span>
-                    <hr className="h-0.5 bg-gray-700 my-6 w-10/12 mx-auto" />
-                    <div className="flex justify-center gap-4 sm:gap-2 w-full sm:w-8/12">
-                        <RiVisaLine className="w-8 h-8 bg-white text-[#2A2A2A] rounded-sm p-0.5 hover:bg-[#FDB813]" />
-                        <RiMastercardFill className="w-8 h-8 bg-white text-[#2A2A2A] rounded-sm p-0.5 hover:bg-[#FDB813]" />
-                        <FaApplePay className="w-8 h-8 bg-white text-[#2A2A2A] rounded-sm p-0.5 hover:bg-[#FDB813]" />
-                        <BiLogoPaypal className="w-8 h-8 bg-white text-[#2A2A2A] rounded-sm p-0.5 hover:bg-[#FDB813]" />
-                    </div>
-                </div>
-
-                <div className="bg-[#FDB813] rounded-2xl flex flex-col justify-center items-center text-center py-8 sm:py-10">
-                    <AiOutlineSafety
-                        size={64}
-                        className="bg-[#2A2A2A] p-4 text-[#FDB813] rounded-lg mb-4"
-                    />
-                    <span className="text-[#2A2A2A] text-xl sm:text-2xl font-semibold mb-6">
-                        Safety First
-                    </span>
-                    <hr className="h-0.5 bg-gray-300 my-6 w-10/12 mx-auto" />
-                    <div className="flex justify-center items-center gap-10">
-                        <div className="flex flex-col items-center gap-2">
-                            <BsFillTaxiFrontFill className="w-8 h-8 rounded-sm p-0.5 bg-[#2A2A2A] hover:bg-white text-[#FDB813]" />
-                            <span className="text-[#2A2A2A] hover:text-white">Guarantee</span>
+            <div className="w-11/12 sm:w-10/12 lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto">
+                {[
+                    {
+                        icon: <FaEuroSign size={64} />,
+                        title: "Pay Your Way",
+                        items: [
+                            { icon: <RiVisaLine size={26} />, label: "Visa" },
+                            { icon: <RiMastercardFill size={26} />, label: "Master" },
+                            { icon: <FaApplePay size={26} />, label: "Apple Pay" },
+                            { icon: <BiLogoPaypal size={26} />, label: "PayPal" },
+                        ],
+                    },
+                    {
+                        icon: <AiOutlineSafety size={64} />,
+                        title: "Safety First",
+                        items: [
+                            { icon: <BsFillTaxiFrontFill size={26} />, label: "Guarantee" },
+                            { icon: <MdHighQuality size={26} />, label: "Quick Ride" },
+                        ],
+                    },
+                    {
+                        icon: <LuTabletSmartphone size={64} />,
+                        title: "100% Digital",
+                        items: [
+                            { icon: <ImAppleinc size={26} />, label: "Apple" },
+                            { icon: <GrAndroid size={26} />, label: "Android" },
+                        ],
+                    },
+                ].map((card, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: i * 0.2 }}
+                        viewport={{ once: true }}
+                        className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-xl p-10 flex flex-col items-center text-center hover:scale-105 transition"
+                    >
+                        <div className="bg-gradient-to-br from-[#FDB813] to-yellow-600 text-[#1a1a1a] rounded-2xl p-4 shadow-[0_0_20px_#FDB813aa] mb-6">
+                            {card.icon}
                         </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <MdHighQuality className="w-8 h-8 rounded-sm p-0.5 bg-[#2A2A2A] hover:bg-white text-[#FDB813]" />
-                            <span className="text-[#2A2A2A] hover:text-white">Quick Ride</span>
-                        </div>
-                    </div>
-                </div>
+                        <span className="text-white text-2xl font-semibold tracking-wide mb-6">
+                            {card.title}
+                        </span>
+                        <hr className="h-0.5 bg-white/20 my-4 w-9/12 mx-auto" />
 
-                <div className="bg-white rounded-2xl flex flex-col justify-center items-center text-center py-8 sm:py-10">
-                    <LuTabletSmartphone
-                        size={64}
-                        className="bg-[#FDB813] p-4 text-[#2A2A2A] rounded-lg mb-4"
-                    />
-                    <span className="text-[#2A2A2A] text-xl sm:text-2xl font-semibold mb-6">
-                        100% Digital
-                    </span>
-                    <div className="flex justify-center items-center gap-6">
-                        <div className="flex flex-col items-center gap-2">
-                            <ImAppleinc className="w-8 h-8 rounded-sm p-0.5 bg-[#2A2A2A] hover:bg-[#FDB813] text-white" />
-                            <span className="text-[#2A2A2A] hover:text-[#FDB813]">Apple</span>
+                        <div
+                            className={`flex justify-center ${
+                                card.items.length > 2 ? "gap-4 flex-wrap" : "gap-10"
+                            }`}
+                        >
+                            {card.items.map((item, j) => (
+                                <div
+                                    key={j}
+                                    className="flex flex-col items-center gap-2 group"
+                                >
+                                    <div className="w-10 h-10 flex items-center justify-center bg-white/80 text-[#1a1a1a] rounded-xl group-hover:bg-[#FDB813] group-hover:text-black transition shadow-md">
+                                        {item.icon}
+                                    </div>
+                                    <span className="text-sm text-white/80 group-hover:text-[#FDB813] transition">
+                                        {item.label}
+                                    </span>
+                                </div>
+                            ))}
                         </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <GrAndroid className="w-8 h-8 rounded-sm p-0.5 bg-[#2A2A2A] hover:bg-[#FDB813] text-white" />
-                            <span className="text-[#2A2A2A] hover:text-[#FDB813]">Android</span>
-                        </div>
-                    </div>
-                </div>
-
+                    </motion.div>
+                ))}
             </div>
         </div>
     );

@@ -1,3 +1,5 @@
+"use client"
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -7,17 +9,21 @@ import DownloadSection from "@/app/components/download/DownloadSection";
 import BannerSection from "@/app/components/banner/BannerSection";
 import FeatureSection from "@/app/components/feature/FeatureSection";
 import BenefitSection from "@/app/components/benefit/BenefitSection";
+import HeroZoomSection from "@/app/components/hero/HeroZoomSection";
 
 export default function Page() {
 
     return (
-        <div className="bg-gray-900 text-gray-100">
+        <div className="bg-[#F6F2FA] text-gray-100">
 
             <HeroSection />
             <FeatureSection />
-            <BannerSection />
-            {/*<BenefitSection />*/}
-            <ServiceSection />
+
+            <HeroZoomSection />
+
+            {/*<BannerSection />*/}
+            <BenefitSection />
+            {/*<ServiceSection />*/}
             <DownloadSection />
 
         </div>
