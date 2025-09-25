@@ -19,30 +19,28 @@ const HeroSection = () => {
     return (
         <div
             onMouseMove={handleMouseMove}
-            className="relative h-screen overflow-hidden"
+            className="relative overflow-hidden h-screen"
         >
-            <section className="relative h-full bg-[#0C0C0C] flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-20">
+            <section className="relative h-full bg-white flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-20 lg:pt-12 pb-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full max-w-7xl relative z-10">
-                    {/* متن سمت چپ */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
                         className="text-center md:text-left"
                     >
-                        <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FDB813] mb-4">
-                            Sisu
-                        </h4>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-snug">
-                            Affordable Ride{" "}
+                        <h1 className="text-6xl sm:text-3xl md:text-4xl font-bold text-[#FDB813] mb-4">
+                            <strong>Sisu-Taxi</strong>
+                        </h1>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-6 leading-snug">
+                            Drivers First. Affordable Ride{" "}
+                            <br />
                             <span className="text-[#FDB813]">For Everyone</span>
                         </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-gray-100 mb-8 max-w-lg mx-auto md:mx-0">
-                            Book safe, fast, and affordable rides anytime. Download our app
-                            today and travel with ease across the city.
+                        <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-lg mx-auto md:mx-0">
+                            Book fast and affordable rides anytime. With Sisu-Taxi, drivers earn more and passengers pay less. Download the app today and move easily across the city.
                         </p>
 
-                        {/* دکمه‌ها */}
                         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                             <motion.a
                                 href="#"
@@ -52,7 +50,7 @@ const HeroSection = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <FaGooglePlay size={35} /> {/* smaller icon */}
+                                <FaGooglePlay size={35} />
                                 Download Android
                             </motion.a>
 
@@ -72,7 +70,6 @@ const HeroSection = () => {
                 </div>
             </section>
 
-            {/* بک‌گراند پارالاکس */}
             <motion.img
                 src="/assets/hero.jpeg"
                 alt="Parallax"
@@ -85,7 +82,6 @@ const HeroSection = () => {
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
             />
 
-            {/* لایه تاریک */}
             <div className="absolute top-0 left-0 w-full h-full bg-black/60 pointer-events-none" />
         </div>
     );
